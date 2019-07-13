@@ -36,3 +36,12 @@ def train(argv):
             'progress': args.progress,
         })
         nn.save(args.output)
+
+if __name__ == '__main__':
+    # TODO: WIP inspect how they train the network
+    # specificly how the network structure
+    args = {
+        'game': 'makhos',
+
+    }
+    train(args)

@@ -8,3 +8,10 @@ def newmodel(argv):
     from util import game
     nn = game.importNn(args.game)
     nn.init(args.filename)
+
+if __name__ == '__main__':
+    args={
+            "game": "makhos",
+            "filename": 'makhos_test.h5',
+    }
+    newmodel(args)
